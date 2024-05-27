@@ -1,0 +1,158 @@
+.formacao {
+  background: #141414;
+  color: #ffffff;
+}
+
+.formacao-container {
+  max-width: 1200px;
+  padding: 120px 24px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  position: relative;
+}
+
+.formacao-container::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../img/detalhe.svg") no-repeat center;
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
+}
+
+.formacao .subtitulo {
+  color: #000000;
+}
+
+.formacao-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 50ch;
+  margin-bottom: 62px;
+  color: #a3a3a3;
+}
+
+.formacao-texto strong {
+  color: #ffffff;
+}
+
+.faculdade-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-bottom: 62px;
+}
+
+.faculdade {
+  flex: 1;
+  background: #000000;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.faculdade-tipo {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #a3a3a3;
+  font-weight: 200;
+  margin-bottom: 16px;
+}
+
+.faculdade-curso {
+  flex: 1;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.faculdade-curso::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 24px;
+  background-color: #b6f829;
+  position: absolute;
+  left: -16px;
+}
+
+.faculdade-instituicao {
+  font-size: 14px;
+  color: #a3a3a3;
+}
+
+.cursos {
+  margin-bottom: 32px;
+}
+
+.formacao-extra h3 {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #a3a3a3;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  position: relative;
+  left: 36px;
+}
+
+.cursos {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.formacao-extra h3::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url("../img/cursos.svg");
+  position: absolute;
+  left: -36px;
+  top: -4px;
+}
+
+.formacao-extra li {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 16px;
+  gap: 24px;
+  align-items: center;
+}
+
+.formacao-extra span {
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 200;
+}
+
+.cursos li {
+  display: flex;
+}
+
+@media (max-width: 800px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+    padding: 56px 24px;
+    gap: 24px;
+  }
+
+  .formacao .subtitulo {
+    font-size: 32px;
+    color: #ffffff;
+  }
+
+  .formacao-texto {
+    font-size: 18px;
+  }
+
+  .faculdade-lista {
+    grid-template-columns: 1fr;
+  }
+}

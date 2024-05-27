@@ -1,0 +1,30 @@
+.footer {
+  background: black;
+}
+
+.footer-container {
+  max-width: 1200px;
+  padding: 120px 20px 300px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-height: auto;
+  align-items: center;
+}
+
+.footer-container p {
+  font-size: 18px;
+  line-height: 1.4;
+  color: aliceblue;
+}
+.footer-contato li {
+  font-size: 24px;
+  color: aliceblue;
+  padding-left: 200px;
+  margin-bottom: 16px;
+}
+
+.footer-contato a {
+  font-size: 24px;
+  color: aliceblue;
+  margin-bottom: 16px;
